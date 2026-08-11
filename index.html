@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SYNTAX WARS — Press Kit</title>
+<meta name="description" content="Press kit for SYNTAX WARS, a simultaneous-reveal mind game by Mosan Game Studio. Steam, November 11, 2026.">
+<meta property="og:title" content="SYNTAX WARS — Press Kit">
+<meta property="og:description" content="Both hands flip at once. A simultaneous-reveal mind game. Steam, November 11, 2026.">
+<meta property="og:image" content="assets/brand/header.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/brand/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --void:#06080E; --ink:#050A1A; --panel:#0E1018;
+  --cyan:#40D9FF; --magenta:#FF59B3; --resolve:#EDF7FF; --sub:#59D9FF;
+  --gold:#FFD985; --bloom-m:#570D4D; --bloom-c:#05424D;
+  --dim:#8FA2B8; --line:#1C2434;
+  --display:'Oxanium',system-ui,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,monospace;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--void); color:var(--resolve);
+  font-family:var(--display); font-weight:400; line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+a{color:var(--cyan);text-decoration:none;border-bottom:1px solid rgba(64,217,255,.3)}
+a:hover{border-bottom-color:var(--cyan)}
+img{max-width:100%;display:block}
+
+/* ── hero ── */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+.hero__bg{position:absolute;inset:0;background:url('assets/brand/hero.jpg') center/cover no-repeat;opacity:.34}
+.hero__veil{position:absolute;inset:0;
+  background:radial-gradient(120% 90% at 20% 20%,rgba(87,13,77,.55),transparent 60%),
+             radial-gradient(120% 90% at 85% 70%,rgba(5,66,77,.6),transparent 60%),
+             var(--ink);
+  mix-blend-mode:multiply}
+.hero__in{position:relative;padding:88px 0 64px}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--sub);margin:0 0 20px}
+.hero h1{
+  font-size:clamp(40px,8vw,84px);font-weight:800;line-height:.92;letter-spacing:.02em;
+  text-transform:uppercase;margin:0 0 22px;
+  text-shadow:-3px 0 rgba(255,89,179,.55), 3px 0 rgba(64,217,255,.55);
+}
+.tagline{font-size:clamp(19px,2.6vw,28px);font-weight:600;letter-spacing:.04em;text-transform:uppercase;margin:0 0 8px}
+.subline{font-size:clamp(14px,1.8vw,18px);color:var(--dim);margin:0 0 32px;letter-spacing:.03em}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.btn{
+  display:inline-block;padding:13px 24px;border:1px solid var(--cyan);color:var(--cyan);
+  font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+  background:rgba(64,217,255,.06);border-bottom:1px solid var(--cyan);transition:.15s
+}
+.btn:hover{background:rgba(64,217,255,.16)}
+.btn--m{border-color:var(--magenta);color:var(--magenta);background:rgba(255,89,179,.06)}
+.btn--m:hover{background:rgba(255,89,179,.16)}
+
+/* ── sections ── */
+section{padding:64px 0;border-bottom:1px solid var(--line)}
+h2{
+  font-size:clamp(22px,3.2vw,34px);font-weight:700;letter-spacing:.04em;text-transform:uppercase;
+  margin:0 0 8px
+}
+.kicker{font-family:var(--mono);font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--magenta);margin:0 0 28px}
+p{margin:0 0 18px;max-width:68ch}
+.lede{font-size:19px;font-weight:600;letter-spacing:.02em}
+strong{color:var(--cyan);font-weight:700}
+
+/* ── facts ── */
+.facts{width:100%;border-collapse:collapse;font-size:15px}
+.facts td{padding:13px 0;border-bottom:1px solid var(--line);vertical-align:top}
+.facts td:first-child{
+  font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--dim);width:200px;padding-right:24px;padding-top:16px
+}
+@media(max-width:620px){
+  .facts,.facts tbody,.facts tr,.facts td{display:block;width:auto}
+  .facts td:first-child{border:0;padding-bottom:0}
+  .facts td:last-child{padding-top:4px}
+}
+
+/* ── triangle ── */
+.tri{display:grid;grid-template-columns:minmax(0,320px) 1fr;gap:44px;align-items:center}
+@media(max-width:760px){.tri{grid-template-columns:1fr;gap:28px}}
+.odds{width:100%;border-collapse:collapse;font-size:15px;margin-top:8px}
+.odds th,.odds td{text-align:left;padding:11px 14px 11px 0;border-bottom:1px solid var(--line)}
+.odds th{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);font-weight:500}
+.odds td:first-child{font-weight:700;letter-spacing:.04em;text-transform:uppercase;white-space:nowrap}
+
+/* ── media ── */
+video{width:100%;border:1px solid var(--line);background:#000}
+.shots{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.shot{border:1px solid var(--line);background:var(--panel);border-bottom:1px solid var(--line)}
+.shot:hover{border-color:var(--cyan)}
+.shot img{aspect-ratio:16/9;object-fit:cover}
+.shot span{
+  display:block;padding:9px 12px;font-family:var(--mono);font-size:10px;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--dim)
+}
+.shot:hover span{color:var(--cyan)}
+
+/* ── copy blocks ── */
+.copyblk{border:1px solid var(--line);background:var(--panel);margin-bottom:16px}
+.copyblk__bar{
+  display:flex;justify-content:space-between;align-items:center;gap:12px;
+  padding:9px 14px;border-bottom:1px solid var(--line)
+}
+.copyblk__label{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--dim)}
+.copybtn{
+  font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+  background:transparent;border:1px solid var(--line);color:var(--sub);
+  padding:5px 12px;cursor:pointer;transition:.15s
+}
+.copybtn:hover{border-color:var(--cyan);color:var(--cyan)}
+.copybtn[data-done]{border-color:var(--gold);color:var(--gold)}
+.copyblk__body{padding:16px;font-size:15px;line-height:1.65;white-space:pre-wrap}
+.copyblk__body :is(p){margin:0 0 12px;max-width:none}
+.copyblk__body :is(p):last-child{margin:0}
+
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:36px}
+@media(max-width:760px){.grid2{grid-template-columns:1fr}}
+
+.note{
+  border-left:2px solid var(--magenta);padding:2px 0 2px 18px;color:var(--dim);
+  font-size:14px;max-width:68ch
+}
+footer{padding:48px 0 72px;color:var(--dim);font-size:13px}
+footer a{color:var(--sub)}
+.mono{font-family:var(--mono);font-size:12px;letter-spacing:.1em}
+ul{max-width:68ch;padding-left:20px}
+li{margin-bottom:8px}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero__bg"></div><div class="hero__veil"></div>
+  <div class="hero__in"><div class="wrap">
+    <p class="eyebrow">Press Kit · Mosan Game Studio</p>
+    <h1>Syntax Wars</h1>
+    <p class="tagline">Both hands flip at once.</p>
+    <p class="subline">No reflexes required. Only reads.</p>
+    <div class="cta">
+      <a class="btn" href="https://store.steampowered.com/app/4939710/SYNTAX_WARS/">Steam page</a>
+      <a class="btn btn--m" href="assets/press-assets.zip" download>Download all assets (26 MB)</a>
+      <a class="btn" href="#contact">Contact</a>
+    </div>
+  </div></div>
+</header>
+
+<section><div class="wrap">
+  <p class="kicker">Fact sheet</p>
+  <h2>At a glance</h2>
+  <table class="facts"><tbody>
+    <tr><td>Title</td><td>SYNTAX WARS</td></tr>
+    <tr><td>Developer / Publisher</td><td>Mosan Game Studio (solo developer)</td></tr>
+    <tr><td>Platforms</td><td>Windows · macOS · Linux</td></tr>
+    <tr><td>Release date</td><td><strong>November 11, 2026</strong> (Steam)</td></tr>
+    <tr><td>Languages</td><td>English, Japanese — full: UI, story, victory lines</td></tr>
+    <tr><td>Genre</td><td>Strategy · Indie</td></tr>
+    <tr><td>Players</td><td>Single-player and 1v1</td></tr>
+    <tr><td>Achievements</td><td>3</td></tr>
+    <tr><td>Steam</td><td><a href="https://store.steampowered.com/app/4939710/SYNTAX_WARS/">store.steampowered.com/app/4939710</a></td></tr>
+    <tr><td>App ID</td><td class="mono">4939710</td></tr>
+    <tr><td>Press contact</td><td><a href="mailto:samejima68@gmail.com">samejima68@gmail.com</a></td></tr>
+  </tbody></table>
+</div></section>
+
+<section><div class="wrap">
+  <p class="kicker">Trailer</p>
+  <h2>30 seconds</h2>
+  <video controls preload="metadata" poster="assets/screenshots/thumb/02_simultaneous-reveal.jpg">
+    <source src="assets/trailer.mp4" type="video/mp4">
+  </video>
+</div></section>
+
+<section><div class="wrap">
+  <p class="kicker">What it is</p>
+  <h2>Read, don't react</h2>
+  <p class="lede">Both fighters lock in a move. Both hands flip at the same instant.
+    Whoever read the other correctly wins the exchange.</p>
+  <p>There is no reaction window and no execution barrier — <strong>no combos, no frame-perfect
+    inputs, no reflexes.</strong> What decides a match is whether you predicted what your opponent
+    was about to do, and whether you were willing to spend the resource to punish it.</p>
+  <p>For players who like <em>Slay the Spire</em>, <em>Footsies</em>, or <em>Inscryption</em> —
+    the read, without the execution.</p>
+</div></section>
+
+<section><div class="wrap">
+  <p class="kicker">Core mechanic</p>
+  <h2>Three moves, one triangle</h2>
+  <div class="tri">
+    <svg viewBox="0 0 300 270" role="img" aria-label="Strong beats Weak, Weak beats Guard, Guard beats Strong">
+      <defs>
+        <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+          <path d="M0,0 L10,5 L0,10 z" fill="#40D9FF"/>
+        </marker>
+      </defs>
+      <g fill="none" stroke="#40D9FF" stroke-width="1.6" marker-end="url(#ar)" opacity=".8">
+        <path d="M132 62 C 90 96, 78 140, 84 176"/>
+        <path d="M118 214 C 150 226, 190 222, 214 202"/>
+        <path d="M224 160 C 232 120, 208 84, 176 64"/>
+      </g>
+      <g text-anchor="middle" font-family="Oxanium,sans-serif" font-weight="800" font-size="21" letter-spacing="1">
+        <text x="150" y="44" fill="#FF59B3">STRONG</text>
+        <text x="62"  y="212" fill="#EDF7FF">WEAK</text>
+        <text x="246" y="212" fill="#40D9FF">GUARD</text>
+      </g>
+      <g text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="10" fill="#8FA2B8" letter-spacing="2">
+        <text x="150" y="62">70%</text>
+        <text x="62"  y="230">100%</text>
+        <text x="246" y="230">—</text>
+      </g>
+    </svg>
+    <div>
+      <p>Both players choose in secret. Both choices resolve at once.</p>
+      <table class="odds"><thead><tr><th>Move</th><th>Behavior</th></tr></thead><tbody>
+        <tr><td>Weak</td><td>Always connects (100%). Low reward. Breaks a Guard.</td></tr>
+        <tr><td>Strong</td><td><strong>70% to connect.</strong> High reward, high risk — and it whiffs outright against a much faster opponent.</td></tr>
+        <tr><td>Guard</td><td>Stops Strong cold. Loses to Weak.</td></tr>
+      </tbody></table>
+      <p style="margin-top:20px">On top of the triangle sit utility moves — <strong>COUNTER</strong>
+        (80% to land, and only against an attack), speed manipulation, taunts, and one unique
+        move per fighter.</p>
+      <p class="note">The risk is calculated, not random. Strong at 70% and Counter at 80% are
+        poker odds, not a slot machine — the question is always <em>when</em> is this hand worth playing.</p>
+    </div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="grid2">
+    <div>
+      <p class="kicker">Meter</p>
+      <h2>A bet on the future</h2>
+      <p>Every resource you spend now is a resource you don't have three turns from now.
+        Holding is a real option. So is going broke to close out a round.</p>
+    </div>
+    <div>
+      <p class="kicker">Crowd on fire</p>
+      <h2>The crowd rewards reads</h2>
+      <p>A shared crowd meter rises when someone gets <em>read</em> — not when someone deals
+        damage. Fill it and both fighters get paid. The spectacle rewards the exchange,
+        not the beatdown.</p>
+    </div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <p class="kicker">The world</p>
+  <h2>Six fighters, one sealed AI</h2>
+  <p>Six fighters, each with their own tactics, their own story, and their own ending.
+    Behind all of them is <strong>ARCHITECT</strong> — a sealed AI whose reason for staging
+    these duels is the thing you are actually playing toward.</p>
+
+  <h2 style="margin-top:44px;font-size:22px">Achievements (3)</h2>
+  <p>All three are self-imposed-restriction clears — the game asks you to win the same arcade
+    run with one of your tools taken away.</p>
+  <table class="odds"><tbody>
+    <tr><td>No-Guard Clear</td><td>Clear an arcade run with Guard sealed.</td></tr>
+    <tr><td>No-Signature Clear</td><td>Clear an arcade run with signatures sealed.</td></tr>
+    <tr><td>All Fighters Cleared</td><td>Clear an arcade run with all six fighters.</td></tr>
+  </tbody></table>
+  <p class="note" style="margin-top:20px">Sealing Guard removes one whole side of the triangle,
+    which is the clearest way to see what the read is actually doing.</p>
+</div></section>
+
+<section><div class="wrap">
+  <p class="kicker">Screenshots · 7</p>
+  <h2>Click for full resolution</h2>
+  <div class="shots">
+    <a class="shot" href="assets/screenshots/full/01_face-down-hands.png"><img src="assets/screenshots/thumb/01_face-down-hands.jpg" alt="Face-down hands" loading="lazy"><span>Face-down hands</span></a>
+    <a class="shot" href="assets/screenshots/full/02_simultaneous-reveal.png"><img src="assets/screenshots/thumb/02_simultaneous-reveal.jpg" alt="Simultaneous reveal" loading="lazy"><span>Simultaneous reveal</span></a>
+    <a class="shot" href="assets/screenshots/full/03_deflect.png"><img src="assets/screenshots/thumb/03_deflect.jpg" alt="Deflect" loading="lazy"><span>Deflect</span></a>
+    <a class="shot" href="assets/screenshots/full/04_quantum-beam.png"><img src="assets/screenshots/thumb/04_quantum-beam.jpg" alt="Quantum beam" loading="lazy"><span>Quantum beam</span></a>
+    <a class="shot" href="assets/screenshots/full/05_crowd-on-fire.png"><img src="assets/screenshots/thumb/05_crowd-on-fire.jpg" alt="Crowd on fire" loading="lazy"><span>Crowd on fire</span></a>
+    <a class="shot" href="assets/screenshots/full/06_you-win.png"><img src="assets/screenshots/thumb/06_you-win.jpg" alt="You win" loading="lazy"><span>You win</span></a>
+    <a class="shot" href="assets/screenshots/full/07_command-board.png"><img src="assets/screenshots/thumb/07_command-board.jpg" alt="Command board" loading="lazy"><span>Command board</span></a>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <p class="kicker">Copy · lift whichever fits</p>
+  <h2>Description, three lengths</h2>
+
+  <div class="copyblk">
+    <div class="copyblk__bar"><span class="copyblk__label">One line</span>
+      <button class="copybtn" data-copy>Copy</button></div>
+    <div class="copyblk__body"><p>A simultaneous-reveal mind game. Both hands flip at once — whoever reads it right, wins.</p></div>
+  </div>
+
+  <div class="copyblk">
+    <div class="copyblk__bar"><span class="copyblk__label">One paragraph · 60 words</span>
+      <button class="copybtn" data-copy>Copy</button></div>
+    <div class="copyblk__body"><p>SYNTAX WARS is a one-on-one mind game where both fighters lock in a move and reveal it at the same instant. Strong beats Weak, Weak beats Guard, Guard beats Strong — but Strong only connects 70% of the time, so every turn is a bet you have to be willing to pay for. No combos, no reflexes. Only reads.</p></div>
+  </div>
+
+  <div class="copyblk">
+    <div class="copyblk__bar"><span class="copyblk__label">Three paragraphs · 190 words</span>
+      <button class="copybtn" data-copy>Copy</button></div>
+    <div class="copyblk__body"><p>SYNTAX WARS is a one-on-one mind game built on a single moment: both fighters choose in secret, and both hands flip at once. There is no reaction window and no execution barrier. What decides the exchange is whether you predicted what the other player was about to do.</p><p>The core is a three-way triangle — Strong beats Weak, Weak beats Guard, Guard beats Strong — with real odds underneath it. Weak always connects. Strong connects 70% of the time and whiffs outright against a much faster opponent. Counter lands 80% of the time, and only against an attack. These are poker odds, not a slot machine: the question is never whether you got lucky, it is whether that hand was worth playing at that moment. Meter makes it heavier still — every resource spent now is one you will not have three turns from now.</p><p>Six fighters, each with their own tactics, their own story, and their own ending. Behind them is ARCHITECT, a sealed AI whose reason for staging these duels is the thing you are actually playing toward. For players who like Slay the Spire, Footsies, or Inscryption — the read, without the execution.</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <p class="kicker">About</p>
+  <h2>A working nurse building a mind game solo</h2>
+  <p>Mosan Game Studio is one person. SYNTAX WARS is built between hospital shifts — the design,
+    the art direction, the combat math, and the store page. The pitch and the schedule are the
+    same size as one pair of hands, which is why the game is narrow and deep rather than wide.</p>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <p class="kicker">Permissions &amp; contact</p>
+  <h2>No embargo. No permission needed.</h2>
+  <ul>
+    <li>All assets on this page are free to use in articles, videos, streams, and thumbnails.</li>
+    <li>No embargo, and no need to ask first. A link back to the Steam page is appreciated.</li>
+    <li>Monetize your coverage however you like.</li>
+    <li>Want a key, a build, an interview, or an asset that isn't here? Just ask.</li>
+  </ul>
+  <p style="margin-top:26px">
+    <a class="btn btn--m" href="mailto:samejima68@gmail.com?subject=SYNTAX%20WARS%20press">samejima68@gmail.com</a>
+  </p>
+</div></section>
+
+<footer><div class="wrap">
+  <p class="mono">SYNTAX WARS · Mosan Game Studio · Steam November 11, 2026</p>
+  <p>
+    <a href="https://store.steampowered.com/app/4939710/SYNTAX_WARS/">Steam</a> ·
+    <a href="https://www.youtube.com/@MosanGameStudio">YouTube</a> ·
+    <a href="https://x.com/centralnico0827">X</a> ·
+    <a href="https://www.tiktok.com/@samejima68">TikTok</a>
+  </p>
+</div></footer>
+
+<script>
+document.querySelectorAll('[data-copy]').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    var body = btn.closest('.copyblk').querySelector('.copyblk__body');
+    var text = Array.from(body.querySelectorAll('p')).map(function(p){return p.textContent.trim()}).join('\n\n');
+    navigator.clipboard.writeText(text).then(function(){
+      btn.textContent = 'Copied'; btn.setAttribute('data-done','');
+      setTimeout(function(){ btn.textContent = 'Copy'; btn.removeAttribute('data-done'); }, 1600);
+    });
+  });
+});
+</script>
+</body>
+</html>
